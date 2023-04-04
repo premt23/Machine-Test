@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-
+import './Login.css';
 
 const Login = () => {
   const navigate=useNavigate();
@@ -18,18 +18,14 @@ const Login = () => {
 
   return (
     
-    <div>
-       <div style={{ marginLeft: '12cm' }}> 
-        <img src='image.png' alt=''/>
-       </div>
-
-      <div style={{position: 'absolute',top:'3cm', left:'6cm'}}>
+    <div className="page">
+      <div  className="left-pane" >
         <div>
           <br/><br/>
           <h3><strong>Sign In</strong></h3><br />
           <h4>new user?<Link>create an account</Link> </h4>
           
-          <div className>
+          <div>
             <input type="text" placeholder="Usename or email"/>
           </div>
           <br />
@@ -49,15 +45,20 @@ const Login = () => {
             <div style={lineStyle}></div>
           </div>
           <div>
-          <span class="fa fa-facebook"></span>
-          <span class="fa fa-linkedin" style={{margin: '0 14px'}}></span>
-           <span class="fa fa-google" style={{margin: '0 14px'}}></span>
-          <span class="fa fa-twitter" style={{margin: '0 14px'}}></span>
+          <span className="fa fa-facebook"></span>
+          <span className="fa fa-linkedin" style={{margin: '0 14px'}}></span>
+           <span className="fa fa-google" style={{margin: '0 14px'}}></span>
+          <span className="fa fa-twitter" style={{margin: '0 14px'}}></span>
 
           </div>
 
         </div>
       </div>
+      <div className="right-pane"> 
+        <img src='image.png' alt=''/>
+      </div>
+
+      
     </div>
   )
 }

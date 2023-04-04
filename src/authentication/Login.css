@@ -1,0 +1,29 @@
+.page{
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+  }
+  .left-pane{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+  }
+  .right-pane{
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .right-pane img{
+    max-width: 100%;
+  }
+  @media screen and (max-width: 576px) {
+    .left-pane{
+      display: block;
+      width: 100%;
+    }
+    .right-pane{
+      display: none;
+      /*width: 50%;*/
+    }
+  }
